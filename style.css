@@ -21,7 +21,7 @@ luz            #fffaf0;
 html {
     font-size: 100%;
     padding: 0;
-	margin: 0;
+    margin: 0;
 }
 body {
     font-family: "ten-mincho", serif;
@@ -165,6 +165,7 @@ header .header-inner ul li {
 .request a:hover {
     border-bottom: solid 2px #FF6070;
 }
+
 /* notice */
 .notice {
     margin: 30px auto;
@@ -685,7 +686,7 @@ footer .footer-inner small {
     }
     h3 {
         font-size: 24px;
-        line-height: 28px;
+        line-height: 30px;
     }
     p {
     }
@@ -1121,7 +1122,7 @@ footer .footer-inner small {
 .sub-calendar .sub-calendar-inner:before {
     content:"";
     display: block;
-    padding-top: 75%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+    padding-top: 180%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
 }
 .sub-calendar .sub-calendar-inner iframe {
     position: absolute;
@@ -1206,6 +1207,149 @@ footer .footer-inner small {
     }
     .sub-calendar .color__list {
         margin: 50px auto;
+    }
+}
+@media (min-width: 1024px) {}
+
+
+/* 2020/3/12コロナウイルスによる公演中止・延期一覧を追加------------------------------------- */
+/* index.html covid ,covid.html */
+.covid {
+    margin: 30px auto;
+    text-align: left;
+}
+.covid .covid-inner {
+    display: inline-block;
+    background: repeating-linear-gradient(45deg, red, red 5px, yellow 5px, yellow 10px);
+    padding-bottom: 10px;
+    word-wrap: nowrap;
+}
+.covid .covid-inner h2 {
+    background-color: #fff;
+    width: 100%;
+}
+.covid p {
+    text-indent: 1rem;
+}
+.covid .covid__concert-list{
+    margin: 1rem auto;
+}
+.covid .jump-covid {
+    text-align: center;
+    margin: 20px auto;
+}
+.covid-btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #fff;/*ボタン色より暗く*/
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #627295;
+    border-radius: 3px;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);*/
+}
+.covid-btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+@media (min-width: 600px) {
+    .covid {
+        margin: 40px auto;
+    }
+}
+@media (min-width: 768px) {}
+@media (min-width: 960px) {
+    .covid {
+        margin: 50px auto;
+    }
+}
+@media (min-width: 1024px) {}
+
+/* covid.html */
+.none {
+    display: none;
+}
+.covid .covid__search__artist {
+    width: 90%;
+    margin: 20px 0;
+    font-size: 12px;
+}
+.covid .covid__search__artist #sel_artist {
+    width: 45%;
+    border-radius: 0;
+    border-bottom: 1px solid #333;
+    padding: 3px;
+    outline: none;
+}
+.covid .covid__search__artist #covid_btn{
+    border: 1px solid #333;
+    padding: 3px;
+    margin-left: 1%;
+    outline: none;
+}
+.covid .covid__search__artist #reset_btn{
+    border: 1px solid #333;
+    padding: 3px;
+    margin-left: 1%;
+    outline: none;
+}
+.covid #covid_btn, .covid #reset_btn{
+    box-shadow: 2px 2px 4px;
+}
+.covid #covid_btn:active, .covid #reset_btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  box-shadow: 2px 2px 4px inset;
+}
+.covid .covid__concert-list li {
+    border-bottom: 1px dotted #333;
+    margin: 5px auto;
+}
+.covid .covid__concert-list li:nth-last-child(1) {
+    border-bottom: none;
+}
+.covid .covid__concert-list-inner {
+    display: flex;
+    align-items: bottom;
+}
+.covid .covid__artist-list {
+    margin-left: 10px;
+}
+.covid .covid__concert-list-inner img {
+    width: 16px; /* h3のline-heightと同じ */
+    height: auto;
+    border-radius: 50%;
+}
+@media (min-width: 600px) {
+    .covid .covid__concert-list-inner img {
+        width: 20px; /* h3のline-heightと同じ */
+    }
+}
+@media (min-width: 768px) {
+    .covid .covid__search__artist {
+        font-size: 16px;
+    }
+    .covid .covid__concert-list-inner img {
+        width: 24px; /* h3のline-heightと同じ */
+    }
+}
+@media (min-width: 960px) {
+    .covid .covid__search__artist {
+        font-size: 20px;
+    }
+    .covid .covid__search__artist #covid_btn{
+        padding: 5px;
+        margin-left: 2%;
+    }
+    .covid .covid__search__artist #reset_btn{
+        padding: 5px;
+        margin-left: 2%;
     }
 }
 @media (min-width: 1024px) {}
