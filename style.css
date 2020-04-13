@@ -91,7 +91,7 @@ p {
 }
 @media (min-width: 1024px) {}
 
-/* index.html --------------------------------------------------------- */
+/* index.html -------------------------------------------------------------------------------- */
 /* fixed-btn */
 .fixed-btn {
     position: fixed;
@@ -112,7 +112,6 @@ p {
     line-height: 3rem;
     font-size: 2rem;
 }
-
 /* header */
 header {
     top: 0;
@@ -165,7 +164,40 @@ header .header-inner ul li {
 .request a:hover {
     border-bottom: solid 2px #FF6070;
 }
-
+/* 2020/03/31追加 */
+/* quiz */
+.quiz {
+    margin: 30px auto;
+}
+.quiz h2 {
+    border-bottom: solid 1px #333;
+    margin-bottom: 15px;
+    width: 45%;
+    text-align: left;
+}
+.quiz p {
+    text-align: left;
+    margin: 2px 0;
+}
+.quiz .quiz-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #fff;/*ボタン色より暗く*/
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #627295;
+    border-radius: 3px;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);*/
+}
+.quiz .quiz-btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
 /* notice */
 .notice {
     margin: 30px auto;
@@ -255,7 +287,6 @@ header .header-inner ul li {
     border: solid 4px #ffff00;
     opacity: 0.7;
 }
-
 /* howto */
 .howto {
     margin: 30px auto;
@@ -281,7 +312,6 @@ header .header-inner ul li {
     height: auto;
     margin: 20px 0;
 }
-
 /* thanks */
 .thanks {
     margin: 30px auto;
@@ -330,7 +360,6 @@ header .header-inner ul li {
     color: #FF6070;
     font-weight: 900;
 }
-
 /* footer */
 footer {
     box-sizing: border-box;
@@ -358,7 +387,6 @@ footer .footer-inner small {
         font-size: 16px;
         line-height: 20px;
     }
-
     /* header */
     header {
     }
@@ -373,7 +401,6 @@ footer .footer-inner small {
     header .header-inner ul li {
         font-size: 20px;
     }
-
     /* request */
     .request {
         margin: 40px auto;
@@ -382,7 +409,6 @@ footer .footer-inner small {
         margin-bottom: 20px;
     }
     .request p {
-        text-align: left;
         margin: 3px 0;
     }
     .request span {
@@ -390,7 +416,24 @@ footer .footer-inner small {
     }
     .request span:hover {
     }
-
+    /* quiz */
+    .quiz {
+        margin: 40px auto;
+    }
+    .quiz h2 {
+        margin-bottom: 20px;
+    }
+    .quiz p {
+        margin: 3px 0;
+    }
+    .quiz .quiz-btn {
+        margin-top: 20px;
+        padding: 1em 1.5em;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .quiz .quiz-btn:active {
+    }
     /* notice */
     .notice {
         margin: 40px auto;
@@ -437,7 +480,6 @@ footer .footer-inner small {
     }
     .artist .artist__list .ar_senra:hover {
     }
-
     /* howto */
     .howto {
         margin: 40px auto;
@@ -456,7 +498,6 @@ footer .footer-inner small {
     .howto .howto__photo1 img, .howto .howto__photo2 img {
         margin: 30px auto;
     }
-
     /* thanks */
     .thanks {
         margin: 40px auto;
@@ -493,7 +534,6 @@ footer .footer-inner small {
     }
     .thanks .thanks__list__block-inner a:hover {
     }
-
     /* footer */
     footer {
     }
@@ -525,7 +565,6 @@ footer .footer-inner small {
     header .header-inner ul li {
         font-size: 24px;
     }
-
     /* request */
     .request {
     }
@@ -538,6 +577,20 @@ footer .footer-inner small {
         font-size: 20px;
     }
     .request span:hover {
+    }
+    /* quiz */
+    .quiz {
+        margin: 40px auto;
+    }
+    .quiz h2 {
+    }
+    .quiz p {
+        margin: 4px 0;
+    }
+    .quiz .quiz-btn {
+        margin-top: 30px;
+    }
+    .quiz .quiz-btn:active {
     }
     /* notice */
     .notice {
@@ -554,7 +607,6 @@ footer .footer-inner small {
     .notice a:hover {
         border-bottom: solid 2px #FF6070;
     }
-
     /* artist */
     .artist {
     }
@@ -623,7 +675,6 @@ footer .footer-inner small {
     }
     .artist .artist__list .ar_senra:hover {
     }
-
     /* howto */
     .howto {
     }
@@ -637,7 +688,6 @@ footer .footer-inner small {
     .howto .howto__photo1 img, .howto .howto__photo2 img {
         margin: 40px auto;
     }
-
     /* thanks */
     .thanks {
     }
@@ -668,7 +718,6 @@ footer .footer-inner small {
     }
     .thanks .thanks__list__block-inner a:hover {
     }
-
     /* footer */
     footer {
         height: 40px;
@@ -690,7 +739,6 @@ footer .footer-inner small {
     }
     p {
     }
-
     /* header */
     header {
         padding-top: 0;
@@ -716,7 +764,6 @@ footer .footer-inner small {
         margin-left: 30px;
         font-size: 20px;
     }
-
     /* request */
     .request {
         margin: 50px auto;
@@ -730,7 +777,18 @@ footer .footer-inner small {
     .request span:hover {
         border-bottom: solid 3px #FF6070;
     }
-
+    /* quiz */
+    .quiz {
+        margin: 50px auto;
+    }
+    .quiz h2 {
+    }
+    .quiz p {
+    }
+    .quiz .quiz-btn {
+    }
+    .quiz .quiz-btn:active {
+    }
     /* notice */
     .notice {
         margin: 80px auto;
@@ -754,7 +812,6 @@ footer .footer-inner small {
     .notice a:hover {
         border-bottom: solid 3px #FF6070;
     }
-
     /* artist */
     .artist {
         margin: 50px auto;
@@ -795,7 +852,6 @@ footer .footer-inner small {
     }
     .artist .artist__list .ar_senra:hover {
     }
-
     /* howto */
     .howto {
         margin: 50px auto;
@@ -823,7 +879,6 @@ footer .footer-inner small {
     .howto .howto__photo1 img, .howto .howto__photo2 img {
         margin: 0 10px;
     }
-
     /* thanks */
     .thanks {
         margin: 50px auto;
@@ -850,7 +905,6 @@ footer .footer-inner small {
     }
     .thanks .thanks__list__block-inner a:hover {
     }
-
     /* footer */
     footer {
         height: 40px;
@@ -863,7 +917,6 @@ footer .footer-inner small {
 
 @media(min-width:1024px) {
 }
-
 /* 子ページ共通(トップの画像の部分) --------------------------------------------------------- */
 .pro-top, .abo-top, .cal-top, .con-top {
     position: relative;
@@ -1101,9 +1154,7 @@ footer .footer-inner small {
         opacity: 1;
     }
 }
-@media (min-width: 1024px) {
-}
-
+@media (min-width: 1024px) {}
 
 /* sub-calendar --------------------------------------------------------- */
 .sub-calendar {
@@ -1189,11 +1240,17 @@ footer .footer-inner small {
     .sub-calendar h2 {
         margin-bottom: 30px;
     }
+    .sub-calendar .sub-calendar-inner:before {
+        padding-top: 120%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+    }
     .sub-calendar .color__list {
         margin: 40px auto;
     }
 }
 @media (min-width: 768px) {
+    .sub-calendar .sub-calendar-inner:before {
+        padding-top: 90%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+    }
     .sub-calendar .color__list ul {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -1201,6 +1258,9 @@ footer .footer-inner small {
 @media (min-width: 960px) {
     .sub-calendar {
         margin: 50px auto;
+    }
+    .sub-calendar .sub-calendar-inner:before {
+        padding-top: 75%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
     }
     .sub-calendar .color__list ul {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1213,7 +1273,7 @@ footer .footer-inner small {
 
 
 /* 2020/3/12コロナウイルスによる公演中止・延期一覧を追加------------------------------------- */
-/* index.html covid ,covid.html */
+/* index.html covid ,covid.html ------------------------------------------------------- */
 .covid {
     margin: 30px auto;
     text-align: left;
@@ -1231,6 +1291,13 @@ footer .footer-inner small {
 .covid p {
     text-indent: 1rem;
 }
+.covid #covidCases p {
+    margin-top: 20px;
+    text-indent: 0;
+}
+.covid #covidCases span {
+    font-size: 1.5em;
+}
 .covid .covid__concert-list{
     margin: 1rem auto;
 }
@@ -1238,7 +1305,8 @@ footer .footer-inner small {
     text-align: center;
     margin: 20px auto;
 }
-.covid-btn {
+.jump-covid-btn {
+    margin-top: 10px;
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -1248,9 +1316,8 @@ footer .footer-inner small {
     border-bottom: solid 3px #627295;
     border-radius: 3px;
     font-weight: bold;
-    /*text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);*/
 }
-.covid-btn:active {
+.jump-covid-btn:active {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
@@ -1260,8 +1327,18 @@ footer .footer-inner small {
     .covid {
         margin: 40px auto;
     }
+    .jump-covid-btn {
+        margin-top: 20px;
+        padding: 1em 1.5em;
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .jump-covid-btn {
+        margin-top: 30px;
+    }
+}
 @media (min-width: 960px) {
     .covid {
         margin: 50px auto;
@@ -1310,6 +1387,7 @@ footer .footer-inner small {
 .covid .covid__concert-list li {
     border-bottom: 1px dotted #333;
     margin: 5px auto;
+    padding-bottom: 5px;
 }
 .covid .covid__concert-list li:nth-last-child(1) {
     border-bottom: none;
@@ -1321,13 +1399,13 @@ footer .footer-inner small {
 .covid .covid__artist-list {
     margin-left: 10px;
 }
-.covid .covid__concert-list-inner img {
+.covid .covid__artist {
     width: 16px; /* h3のline-heightと同じ */
     height: auto;
     border-radius: 50%;
 }
 @media (min-width: 600px) {
-    .covid .covid__concert-list-inner img {
+    .covid .covid__artist {
         width: 20px; /* h3のline-heightと同じ */
     }
 }
@@ -1335,7 +1413,7 @@ footer .footer-inner small {
     .covid .covid__search__artist {
         font-size: 16px;
     }
-    .covid .covid__concert-list-inner img {
+    .covid .covid__artist {
         width: 24px; /* h3のline-heightと同じ */
     }
 }
@@ -1352,4 +1430,77 @@ footer .footer-inner small {
         margin-left: 2%;
     }
 }
+@media (min-width: 1024px) {}
+
+
+
+/* concert.html ------------------------------------------------------- */
+.concert {
+    margin: 30px auto;
+}
+.concert h2 {
+    border-bottom: solid 1px #333;
+    margin-bottom: 15px;
+    width: 50%;
+    text-align: left;
+}
+.concert .concert__search__artist {
+    width: 90%;
+    max-width: 540px;
+    margin: 40px auto;
+    font-size: 12px;
+}
+.concert .concert__search__artist #sel_artist {
+    width: 45%;
+    border-radius: 0;
+    border-bottom: 1px solid #333;
+    padding: 3px;
+    outline: none;
+}
+.concert .concert__search__artist #concert_btn{
+    border: 1px solid #333;
+    padding: 3px;
+    margin-left: 1%;
+    outline: none;
+}
+.concert .concert__search__artist #reset_btn{
+    border: 1px solid #333;
+    padding: 3px;
+    margin-left: 1%;
+    outline: none;
+}
+.concert #concert_btn, .concert #reset_btn{
+    box-shadow: 2px 2px 4px;
+}
+.concert #concert_btn:active, .concert #reset_btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  box-shadow: 2px 2px 4px inset;
+}
+.concert__list {
+    margin: 30px auto;
+    text-align: left;
+}
+.concert__list>div {
+    border-bottom: 1px dotted #333;
+    padding-bottom: 10px;
+    margin: 20px auto;
+}
+.concert__list>div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.target__date, .target__price,.target__open,.target__start,.target__artist,.target__contact,.target__rink,.target__other {
+    margin-left: 1rem;
+    margin-top: 4px;
+}
+.target__rink a {
+    text-indent: 0;
+}
+@media (min-width: 600px) {}
+@media (min-width: 768px) {}
+@media (min-width: 960px) {}
 @media (min-width: 1024px) {}

@@ -7,13 +7,16 @@
 //6=luz
 //7=志麻
 //8=センラ
-const btn = document.getElementById("covid_btn");
 const reset = document.getElementById("reset_btn");
 const sel = document.getElementById("sel_artist");
-const els = document.querySelectorAll('.target');
+let els;
 
+//covid.htmlのボタンの処理-----------------------------------------------
+const covid_btn = document.getElementById("covid_btn");
 //絞るボタン
-btn.addEventListener("click", () => {
+covid_btn.addEventListener("click", () => {
+    els = document.querySelectorAll('.target');
+    console.log(els);
     var value = sel.value; //選択の結果
     if (value !== "0") {
         document.getElementById("note_comment").classList.add("none");
@@ -45,12 +48,10 @@ btn.addEventListener("click", () => {
                 value = "senra";
                 break;
         }
-
         //前回の結果をリセットする
         els.forEach(function(li) {
             li.classList.remove("none");
         });
-
         //クラス名にvalueがない場合、
         //クラス名にnoneを追加して非表示にする
         els.forEach(function(li) {
@@ -64,9 +65,9 @@ btn.addEventListener("click", () => {
         document.getElementById("note_comment").classList.remove("none");
     }
 });
-
 //リセットボタン
 reset.addEventListener("click", () => {
+    els = document.querySelectorAll('.target');
     els.forEach(function(li) {
         li.classList.remove("none");
         document.getElementById("note_comment").classList.add("none");

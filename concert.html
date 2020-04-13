@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>あの人かれんだー</title>
+        <title>あの人かれんだー | CONCERT</title>
         <meta name="description" content="
         あの人かれんだーでは様々なアーティストの公表されている様々な予定をまとめています。
         大事な予定を逃さないでください！" />
@@ -61,11 +61,11 @@
         <div class="empty"></div>
 
         <!-- COVID-19 (コロナ) -->
-        <div class="covid wrapper">
-            <div class="covid-inner">
-                <h2>公演中止・延期一覧</h2>
+        <div class="concert wrapper">
+            <div class="concert-inner">
+                <h2>ライブ一覧</h2>
             </div>
-            <div class="covid__search__artist">
+            <div class="concert__search__artist">
                 <select name="" id="sel_artist">
                     <option value="0" selected>選択してください！</option>
                     <option value="1">まふまふ</option>
@@ -77,15 +77,15 @@
                     <option value="7">志麻</option>
                     <option value="8">センラ</option>
                 </select>
-                <button type="button" name="button" id="covid_btn">絞る！</button>
+                <button type="button" name="button" id="concert_btn">絞る！</button>
                 <button type="button" name="button" id="reset_btn">リセット</button>
             </div>
             <div id="note_comment" class="note_comment none">
                 <p>アーティストを選択してください!!!!</p>
             </div>
-            <ul class="covid__concert-list" id="covid__concert-list">
-            </ul>
-        </div><!-- /COVID-19 (コロナ) -->
+        </div>
+        <div class="concert__list wrapper" id="concert__list">
+        </div>
 
         <!-- FOOTER -->
         <footer>
@@ -94,8 +94,7 @@
             </div>
         </footer><!-- /FOOTER -->
 
-        <script src="covidConcertList.js"></script>
-        <script src="btn.js"></script>
+        <script src="list_output.js"></script>
 
     </body>
 </html>

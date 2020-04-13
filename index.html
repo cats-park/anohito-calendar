@@ -7,6 +7,12 @@
         <meta name="description" content="
         あの人かれんだーでは様々なアーティストの公表されている様々な予定をまとめています。
         大事な予定を逃さないでください！" />
+        <meta property="og:title" content="あの人かれんだー">
+        <meta property="og:description" content="
+        あの人かれんだーでは様々なアーティストの公表されている様々な予定をまとめています。
+        大事な予定を逃さないでください！">
+        <meta property="og:site_name" content="あの人かれんだー">
+        <meta property="og:image" content="img/icon/favicon.png">
 
         <!-- 古いIE用 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,6 +27,9 @@
 
         <!-- アイコン -->
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 
         <!-- GOOGLE FONT -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -74,160 +83,26 @@
             </p>
         </div><!-- /REQUEST -->
 
+        <!-- 3/31追加 -->
+        <!-- QUIZ -->
+        <div class="quiz wrapper">
+            <h2>ミニゲーム</h2>
+            <p>簡単なミニゲームを作りましたので是非満点目指してプレイしてみてください‼︎</p>
+            <a href="quizImage/index.html" class="quiz-btn">スタート！</a>
+        </div><!-- /QUIZ -->
+
         <!-- COVID-19 (コロナ) -->
         <div class="covid wrapper">
             <div class="covid-inner">
                 <h2>公演中止・延期一覧</h2>
             </div>
-            <ul class="covid__concert-list">
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・浦島坂船 Spring Tour2020＠群馬</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-uratanuki.jpeg" alt="">
-                            <img src="img/covid/cov-sakata.jpeg" alt="">
-                            <img src="img/covid/cov-shima.jpeg" alt="">
-                            <img src="img/covid/cov-senra.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>2月29日(土)　→　5月9日(土)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・XYZ TOUR 2020-DJ Style-＠宮城</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-luz.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月1日(日)　→　5月2日(土)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・XYZ TOUR 2020-DJ Style-＠赤羽</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-luz.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月7日(土)　→　中止</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・浦島坂船 Spring Tour2020＠大阪</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-uratanuki.jpeg" alt="">
-                            <img src="img/covid/cov-sakata.jpeg" alt="">
-                            <img src="img/covid/cov-shima.jpeg" alt="">
-                            <img src="img/covid/cov-senra.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月7日(土)　→　4月8日(水)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・浦島坂船 Spring Tour2020＠大阪</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-uratanuki.jpeg" alt="">
-                            <img src="img/covid/cov-sakata.jpeg" alt="">
-                            <img src="img/covid/cov-shima.jpeg" alt="">
-                            <img src="img/covid/cov-senra.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月8日(日)　→　5月11日(月)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・luz MEMBERS MEETING Vol.4＠東京</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-luz.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月14日(土)　→　4月29日(水祝)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・浦島坂船 Spring Tour2020＠岩手</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-uratanuki.jpeg" alt="">
-                            <img src="img/covid/cov-sakata.jpeg" alt="">
-                            <img src="img/covid/cov-shima.jpeg" alt="">
-                            <img src="img/covid/cov-senra.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月14日(土)　→　5月14日(木)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・浦島坂船 Spring Tour2020＠青森</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-uratanuki.jpeg" alt="">
-                            <img src="img/covid/cov-sakata.jpeg" alt="">
-                            <img src="img/covid/cov-shima.jpeg" alt="">
-                            <img src="img/covid/cov-senra.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月15日(日)　→　5月16日(土)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・XYZ TOUR 2020-DJ Style-＠広島</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-luz.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月20日(金祝)　→　5月14日(木)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・浦島坂船 Spring Tour2020＠愛知</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-uratanuki.jpeg" alt="">
-                            <img src="img/covid/cov-sakata.jpeg" alt="">
-                            <img src="img/covid/cov-shima.jpeg" alt="">
-                            <img src="img/covid/cov-senra.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月20日(金祝)　→　6月12日(金)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・XYZ TOUR 2020-DJ Style-＠静岡</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-luz.jpeg" alt="">
-                            <img src="img/covid/cov-senra.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月22日(日)　→　5月22日(金)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・ひきこもりでもLIVEがしたい＠東京</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-mafumafu.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月25日(水)　→　未定(3/31(火)までに方針決定)</p>
-                </li>
-                <li>
-                    <div class="covid__concert-list-inner" id="covid__concert-list-inner">
-                        <h3>・ひきこもりでもフェスがしたい＠東京</h3>
-                        <div class="covid__artist-list">
-                            <img src="img/covid/cov-mafumafu.jpeg" alt="">
-                            <img src="img/covid/cov-soraru.jpeg" alt="">
-                            <img src="img/covid/cov-uratanuki.jpeg" alt="">
-                            <img src="img/covid/cov-sakata.jpeg" alt="">
-                            <img src="img/covid/cov-amatsuki.jpeg" alt="">
-                            <img src="img/covid/cov-luz.jpeg" alt="">
-                            <img src="img/covid/cov-shima.jpeg" alt="">
-                            <img src="img/covid/cov-senra.jpeg" alt="">
-                        </div>
-                    </div>
-                    <p>3月26日(木)　→　未定(3/31(火)までに方針決定)</p>
-                </li>
-            </ul>
-            <div class="jump-covid">
-                <a href="covid.html" class="covid-btn">詳細はこちら‼︎</a>
+            <div id="covidCases">
+                <!-- ここに件数の文章を入れる -->
             </div>
-        </div><!-- /COVID-19 (コロナ) -->
+            <div class="jump-covid">
+                <a href="covid.html" class="jump-covid-btn">詳細はこちら‼︎</a>
+            </div>
+        </div>
 
         <!-- ARTIST -->
         <div class="artist wrapper">
@@ -385,14 +260,13 @@
         <div class="notice wrapper">
             <div class="notice-inner">
                 <p>
-                    管理人は絵が下手すぎるのでサイトに使用する<span class="big-word">⇩イラスト⇩</span>を募集しています！！
+                    管理人は絵が下手すぎるのでサイトに使用する<span class="big-word">イラスト</span>を募集しています！！
                     あなたの力を貸してください！
                 </p>
                 <p><a class="red-word" href="https://twitter.com/anohito_ca"
                         target="_blank">DM</a>にお願いいたします！（お礼あり）</p>
             </div>
         </div><!-- /NOTICE -->
-
 
         <!-- THANKS -->
         <div class="thanks wrapper">
@@ -425,7 +299,7 @@
                     </div>
                 </div>
                 <div class="thanks__list__block">
-                    <h3 class="thanks__list__block-rtitle"-title>となりの坂田</h3>
+                    <h3 class="thanks__list__block-rtitle">となりの坂田</h3>
                     <div class="thanks__list__block-inner">
                         <p>Twitter：<a href="https://twitter.com/sakatandao">@sakatandao</a></p>
                         <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
@@ -439,7 +313,7 @@
                     </div>
                 </div>
                 <div class="thanks__list__block">
-                    <h3 class="thanks__list__block-rtitle"-title>luz</h3>
+                    <h3 class="thanks__list__block-rtitle">luz</h3>
                     <div class="thanks__list__block-inner">
                         <p>Twitter：<a href="https://twitter.com/luzabs">@luzabs</a></p>
                         <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
@@ -453,10 +327,39 @@
                     </div>
                 </div>
                 <div class="thanks__list__block">
-                    <h3 class="thanks__list__block-rtitle"-title>センラ</h3>
+                    <h3 class="thanks__list__block-rtitle">センラ</h3>
                     <div class="thanks__list__block-inner">
                         <p>Twitter：<a href="https://twitter.com/sen_sen_sen_sen">@sen_sen_sen_sen</a></p>
                         <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                    </div>
+                </div>
+                <!-- 4/1　４アーティスト追加 -->
+                <div class="thanks__list__block">
+                    <h3 class="thanks__list__block-ltitle">ウォルピスカーター</h3>
+                    <div class="thanks__list__block-inner">
+                        <p>Twitter：<a href="https://twitter.com/wolpis_kater">@wolpis_kater</a></p>
+                        <p>Twitterなどの画像を多数お借りいたしました。ありがとうございます。</p>
+                    </div>
+                </div>
+                <div class="thanks__list__block">
+                    <h3 class="thanks__list__block-rtitle">Gero</h3>
+                    <div class="thanks__list__block-inner">
+                        <p>Twitter：<a href="https://twitter.com/Gero2525">@Gero2525</a></p>
+                        <p>Twitterなどの画像を多数お借りいたしました。ありがとうございます。</p>
+                    </div>
+                </div>
+                <div class="thanks__list__block">
+                    <h3 class="thanks__list__block-ltitle">+α/あるふぁきゅん。</h3>
+                    <div class="thanks__list__block-inner">
+                        <p>Twitter：<a href="https://twitter.com/alfa10alfa">@alfa10alfa</a></p>
+                        <p>Twitterなどの画像を多数お借りいたしました。ありがとうございます。</p>
+                    </div>
+                </div>
+                <div class="thanks__list__block">
+                    <h3 class="thanks__list__block-rtitle">けーぽん</h3>
+                    <div class="thanks__list__block-inner">
+                        <p>Twitter：<a href="https://twitter.com/k_pon_dasei">@k_pon_dasei</a></p>
+                        <p>Twitterなどの画像を多数お借りいたしました。ありがとうございます。</p>
                     </div>
                 </div>
             </div>
@@ -468,5 +371,33 @@
                 <small>&copy;2020 あの人かれんだー</small>
             </div>
         </footer><!-- /FOOTER -->
+
+        <!-- 3/30に追加 -->
+        <script>
+            let kensu;
+            const covidCases = document.getElementById("covidCases");
+
+            let req = new XMLHttpRequest();						// XMLHttpRequest オブジェクトを生成する
+            req.open("GET", "https://raw.githubusercontent.com/cats-park/json-data/master/covidConcertList.json");
+            req.send();
+            req.onreadystatechange = function() {				// XMLHttpRequest オブジェクトの状態が変化した際に呼び出されるイベントハンドラ
+                if(req.readyState == 4 && req.status == 200){	// サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
+                    let json = JSON.parse(req.responseText);
+
+                    kensu = json.length;
+                    hyoji(kensu);
+                }
+            };
+            let hyoji = function (ken) {
+                covidCases.insertAdjacentHTML(
+                    'beforeend',
+                    `<p>新型コロナウィルスの影響で中止・延期になったのは<span class="red-word">${ken}</span>件です‼︎</p>`
+                );
+            }
+
+
+        </script>
+
+
     </body>
 </html>
