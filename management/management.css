@@ -74,6 +74,13 @@ header h1 {
     text-align: center;
     margin-top: 20px;
 }
-main label {
+form {
+    text-align: left;
+}
+.form1 label {
     display: block;
+}
+
+.result p {
+    text-align: left;
 }

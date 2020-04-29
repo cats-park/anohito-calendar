@@ -43,13 +43,19 @@
             <h1>かれんだーフォーマットの作成</h1>
         </header>
         <main class="wrapper">
-            <form class="" action="index.html" method="post">
-                <label for="">タイトル：<input type="text" id="title" name="" value=""></label>
-                <label for="">URL：<input type="text" id="url" name="" value=""></label>
-                <input type="button" id="make_btn" value="生成">
+            <form class="form1" action="" method="post" name="form1">
+                <label>タイトル(曲名)：<input type="text" id="title" name="" value=""></label>
+                <label>URL：<input type="text" id="url" name="" value=""></label>
             </form>
+            <form class="" action="" method="post" name="form2">
+                <p>オプション：
+                    <label><input type="radio" name="option" value="">歌ってみた</label>
+                    <label><input type="radio" name="option" value="">オリジナル</label>
+                </p>
+            </form>
+            <input type="button" id="make_btn" value="生成">
 
-            <div class="result">
+            <div id="result" class="result">
 
             </div>
         </main>
