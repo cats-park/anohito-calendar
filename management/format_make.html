@@ -47,21 +47,26 @@
                 <label>タイトル(曲名)：<input type="text" id="title" name="" value=""></label>
                 <label>URL：<input type="text" id="url" name="" value=""></label>
             </form>
-            <form class="" action="" method="post" name="form2">
+            <form class="" id="form2" action="" method="post" name="form2">
                 <p>オプション：
-                    <label><input type="radio" name="option" value="">歌ってみた</label>
-                    <label><input type="radio" name="option" value="">オリジナル</label>
+                    <label><input type="checkbox" name="option" value="歌ってみた">歌ってみた</label>
+                    <label><input type="checkbox" name="option" value="オリジナル">オリジナル</label>
                 </p>
             </form>
             <input type="button" id="make_btn" value="生成">
 
             <div id="result" class="result">
-
+            </div>
+            <div class="copyButtons">
+                <button id="copyTitleBtn" type="button" name="button">タイトルをコピー</button>
+                <button id="copyTextBtn" type="button" name="button">本文をコピーをコピー</button>
             </div>
         </main>
 
         <script src="formatMake.js">
         </script>
 
+        <script src="copyTitleText.js">
+        </script>
     </body>
 </html>
