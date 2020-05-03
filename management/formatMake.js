@@ -6,7 +6,7 @@ const makeBtn = document.getElementById("make_btn");
 
 // URLから媒体名を検索する際に使用する連想配列（キーワード：媒体名）
 const mediums = {
-    "youtube": "youtube",
+    "youtube": "YouTube",
     "nicovideo" : "niconico",
     "twitcasting" : "ツイキャス",
     "openrec" : "OPENREC",
@@ -29,9 +29,9 @@ makeBtn.addEventListener("click", function() {
         rText.remove();
     }
 
-    // 前回結果の赤枠を削除
-    title.style.border = "none";
-    url.style.border = "none";
+    // 前回結果の赤枠を削除（元の書式で上書きする）
+    title.style.border = "border-bottom: solid 1px #333;";
+    url.style.border = "border-bottom: solid 1px #333;";
     form2.style.border = "none";
 
     // オプションで選択したvalueを配列で変数に代入
@@ -47,15 +47,15 @@ makeBtn.addEventListener("click", function() {
     }else {
         // タイトルが未入力の場合赤枠で囲む
         if(title.value =="") {
-            title.style.border = "solid 3px red";
+            title.style.border = "solid 3px #9E005D";
         }
         // URLが未入力の場合赤枠で囲む
         if(url.value =="") {
-            url.style.border = "solid 3px red";
+            url.style.border = "solid 3px #9E005D";
         }
         // オプションを複数選択している場合赤枠で囲む
         if(typeArr.length == 2) {
-            form2.style.border = "solid 3px red";
+            form2.style.border = "solid 3px #9E005D";
         }
     }
 });
@@ -104,8 +104,7 @@ let makeFormat2 = (title, url, type) => {
     // <div id="result">の中の後ろに入れる
     result.insertAdjacentHTML("beforeend",
     `
-    <textarea rows="3" cols="60" id="resultText">${medium}↓&#13;URL：${url}
-    </textarea>
+    <textarea rows="3" cols="60" id="resultText">${medium}↓&#13;URL：${url}</textarea>
     `
     );
 }

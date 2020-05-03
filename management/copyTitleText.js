@@ -1,7 +1,9 @@
-const copyTitleBtn = document.getElementById("copyTitleBtn");
-const copyTextBtn = document.getElementById("copyTextBtn");
+// 「タイトルをコピー」のボタン
+const copyTitleBtn = document.getElementById("copyTitle_btn");
+// 「本文をコピー」のボタン
+const copyTextBtn = document.getElementById("copyText_btn");
 
-
+// 「タイトルをコピー」ボタンを押した時の処理
 copyTitleBtn.addEventListener("click", function() {
     // コピー対象をJavaScript上で変数として定義する
     let copyTarget = document.getElementById("resultTitle");
@@ -13,6 +15,7 @@ copyTitleBtn.addEventListener("click", function() {
     document.execCommand("Copy");
 });
 
+// 「本文をコピー」ボタンを押した時の処理
 copyTextBtn.addEventListener("click", function() {
     // コピー対象をJavaScript上で変数として定義する
     let copyTarget = document.getElementById("resultText");
