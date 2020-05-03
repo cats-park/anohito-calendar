@@ -76,11 +76,13 @@ let makeFormat1 = (title, url) => {
     // URLに含まれている媒体名を変数に代入する
     let medium = checkMedium(url);
 
+    // <div id="result">の中の先頭に入れる
     result.insertAdjacentHTML("afterbegin",
     `
     <textarea rows="1" cols="60" id="resultTitle">【${medium}】${title}</textarea>
     `
     );
+    // <div id="result">の中の後ろに入れる
     result.insertAdjacentHTML("beforeend",
     `
     <textarea rows="3" cols="60" id="resultText">${medium}↓&#13;URL：${url}</textarea>
@@ -93,11 +95,13 @@ let makeFormat2 = (title, url, type) => {
     // URLに含まれている媒体名を変数に代入する
     let medium = checkMedium(url);
 
+    // <div id="result">の中の先頭に入れる
     result.insertAdjacentHTML("afterbegin",
     `
     <textarea rows="1" cols="60" id="resultTitle">【${medium}】『${title}』${type} 投稿</textarea>
     `
     );
+    // <div id="result">の中の後ろに入れる
     result.insertAdjacentHTML("beforeend",
     `
     <textarea rows="3" cols="60" id="resultText">${medium}↓&#13;URL：${url}
@@ -106,7 +110,7 @@ let makeFormat2 = (title, url, type) => {
     );
 }
 
-// URLに含まれているキーワードから紐づく媒体名を返す
+// URLに含まれているキーワードに紐づく媒体名を返す
 let checkMedium = (url) => {
     let resultMedium = "";
     Object.keys(mediums).forEach((medium) => {
