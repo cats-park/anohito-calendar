@@ -34,16 +34,16 @@ makeBtn.addEventListener("click", function() {
     url.style.border = "none";
     form2.style.border = "none";
 
-    // オプションで選択した個数
-    let typesLength = checkTypes(types);
+    // オプションで選択したvalueを配列で変数に代入
+    let typeArr = checkTypes(types);
 
     // タイトル、URLが入力されていて、オプションが選択されていない場合makeFormat1()の処理を行う
     // タイトル、URLが入力されていて、オプションが1つ選択されている場合makeFormat2()の処理を行う
     // それ以外（タイトルかURLが未入力、オプションで2つ選択している）の場合対処の部分に赤枠を囲う
-    if(title.value !="" && url.value !="" && typesLength ==0) {
+    if(title.value !="" && url.value !="" && typeArr.length == 0) {
         makeFormat1(title.value, url.value);
-    }else if(title.value !="" && url.value !="" && typesLength ==1) {
-        makeFormat2(title.value, url.value, types.value);
+    }else if(title.value !="" && url.value !="" && typeArr.length == 1) {
+        makeFormat2(title.value, url.value, typeArr[0]);
     }else {
         // タイトルが未入力の場合赤枠で囲む
         if(title.value =="") {
@@ -54,7 +54,7 @@ makeBtn.addEventListener("click", function() {
             url.style.border = "solid 3px red";
         }
         // オプションを複数選択している場合赤枠で囲む
-        if(typesLength == 2) {
+        if(typeArr.length == 2) {
             form2.style.border = "solid 3px red";
         }
     }
@@ -68,7 +68,7 @@ let checkTypes = (types) => {
             arr.push(type.value);
         }
     });
-    return arr.length;
+    return arr;
 }
 
 // 楽曲以外の場合の生成処理（オプションが選択されていない場合）
