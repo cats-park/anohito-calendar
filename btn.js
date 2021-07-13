@@ -56,9 +56,9 @@ covid_btn.addEventListener("click", () => {
         //クラス名にnoneを追加して非表示にする
         els.forEach(function(li) {
              //対象のliのなかに
-             if(li.classList.value.indexOf(value) < 0) {
-                 li.classList.add("none");
-             }
+            if(li.classList.value.indexOf(value) < 0) {
+                li.classList.add("none");
+            }
         });
     }else {
         //note_commentのnoneを消す toggleで

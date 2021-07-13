@@ -1,101 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>あの人かれんだー</title>
-        <meta name="description" content="
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>あの人かれんだー</title>
+    <meta name="description" content="
         あの人かれんだーでは様々なアーティストの公表されている様々な予定をまとめています。
         大事な予定を逃さないでください！" />
 
-        <!-- 古いIE用 -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- サイトアイコン（16*16） -->
-        <link rel="icon" href="img/icon/favicon.png" sizes="16x16" type="image/png" />
-        <!-- スマホ用アイコン画像（150*150） -->
-        <link rel="apple-touch-icon-precomposed" href="img/icon/favicon.png" />
+    <!-- 古いIE用 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- サイトアイコン（16*16） -->
+    <link rel="icon" href="img/icon/favicon.png" sizes="16x16" type="image/png" />
+    <!-- スマホ用アイコン画像（150*150） -->
+    <link rel="apple-touch-icon-precomposed" href="img/icon/favicon.png" />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
 
-        <!-- アイコン -->
-        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- アイコン -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
-        <!-- GOOGLE FONT -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157258121-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <!-- GOOGLE FONT -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157258121-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-          gtag('config', 'UA-157258121-1');
-        </script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-        <!-- ADOBE の FONT -->
-        <script src="https://use.typekit.net/fya1swr.js"></script>
-        <script>
-            try {
-                Typekit.load({async: true});
-            } catch (e) {}
-        </script>
-    </head>
+        gtag('config', 'UA-157258121-1');
+    </script>
 
-    <body>
-        <!-- HEADER -->
-        <header id="header">
-            <div class="header-inner wrapper">
-                <h1><a href="index.html" class="red-word">あの人かれんだー</a></h1>
-                <nav class="menu" id="menu">
-                    <ul>
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="calendar.html">Calendar</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header><!-- /HEADER -->
+    <!-- ADOBE の FONT -->
+    <script src="https://use.typekit.net/fya1swr.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+</head>
 
-        <div class="empty"></div>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner wrapper">
+            <h1><a href="index.html" class="red-word">あの人かれんだー</a></h1>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- /HEADER -->
 
-        <!-- COVID-19 (コロナ) -->
-        <div class="covid wrapper">
-            <div class="covid-inner">
-                <h2>公演中止・延期一覧</h2>
-            </div>
-            <div class="covid__search__artist">
-                <select name="" id="sel_artist">
-                    <option value="0" selected>選択してください！</option>
-                    <option value="1">まふまふ</option>
-                    <option value="2">そらる</option>
-                    <option value="3">うらたぬき</option>
-                    <option value="4">となりの坂田</option>
-                    <option value="5">天月-あまつき-</option>
-                    <option value="6">luz</option>
-                    <option value="7">志麻</option>
-                    <option value="8">センラ</option>
-                </select>
-                <button type="button" name="button" id="covid_btn">絞る！</button>
-                <button type="button" name="button" id="reset_btn">リセット</button>
-            </div>
-            <div id="note_comment" class="note_comment none">
-                <p>アーティストを選択してください!!!!</p>
-            </div>
-            <ul class="covid__concert-list" id="covid__concert-list">
-            </ul>
-        </div><!-- /COVID-19 (コロナ) -->
+    <div class="empty"></div>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer-inner wrapper">
-                <small>&copy;2020 あの人かれんだー</small>
-            </div>
-        </footer><!-- /FOOTER -->
+    <!-- COVID-19 (コロナ) -->
+    <div class="covid wrapper">
+        <div class="covid-inner">
+            <h2>公演中止・延期一覧</h2>
+        </div>
+        <div class="covid__search__artist">
+            <select name="" id="sel_artist">
+                <option value="0" selected>選択してください！</option>
+                <option value="1">まふまふ</option>
+                <option value="2">そらる</option>
+                <option value="3">うらたぬき</option>
+                <option value="4">となりの坂田</option>
+                <option value="5">天月-あまつき-</option>
+                <option value="6">luz</option>
+                <option value="7">志麻</option>
+                <option value="8">センラ</option>
+            </select>
+            <button type="button" name="button" id="covid_btn">絞る！</button>
+            <button type="button" name="button" id="reset_btn">リセット</button>
+        </div>
+        <div id="note_comment" class="note_comment none">
+            <p>アーティストを選択してください!!!!</p>
+        </div>
+        <ul class="covid__concert-list" id="covid__concert-list">
+        </ul>
+    </div><!-- /COVID-19 (コロナ) -->
 
-        <script src="covidConcertList.js"></script>
-        <script src="btn.js"></script>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner wrapper">
+            <small>&copy;2020 あの人かれんだー</small>
+        </div>
+    </footer><!-- /FOOTER -->
 
-    </body>
+    <script src="covidConcertList.js"></script>
+    <script src="btn.js"></script>
+
+</body>
+
 </html>
