@@ -433,6 +433,28 @@ header .header-inner ul li {
     font-weight: 900;
 }
 
+/* other */
+.other {
+    margin: 30px auto;
+}
+
+.other h2 {
+    border-bottom: solid 1px #333;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.other ul li {
+    list-style: circle;
+    text-align: left;
+    
+}
+.other ul li a {
+    border-bottom: solid 1px #333;
+}
+
+
 /* footer */
 footer {
     box-sizing: border-box;
