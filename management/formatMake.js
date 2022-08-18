@@ -10,7 +10,9 @@ const mediums = {
     "nicovideo" : "niconico",
     "twitcasting" : "ツイキャス",
     "openrec" : "OPENREC",
-    "mildom" : "mildom"
+    "mildom" : "mildom",
+    "tiktok": "TikTok",
+    "twitch":"Twitch"
 }
 
 // 生成ボタンを押した時の処理
