@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+.howto {
+    margin: 30px auto;
+}
+
+.howto h2 {
+    border-bottom: solid 1px #333;
+    width: 80%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.howto p {
+    text-align: left;
+}
+
+.howto li {
+    list-style: decimal;
+}
+
+.howto .howto__photo1,
+.howto .howto__photo2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.howto .howto__photo1 img,
+.howto .howto__photo2 img {
+    width: 95%;
+    height: auto;
+    margin: 20px 0;
+}
+
+@media (min-width:600px) {
+    .howto {
+        margin: 40px auto;
+    }
+
+    .howto h2 {
+        margin-bottom: 20px;
+    }
+
+    .howto li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .howto .howto__photo1 img,
+    .howto .howto__photo2 img {
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .howto .howto__photo1,
+    .howto .howto__photo2 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .howto .howto__photo1 img,
+    .howto .howto__photo2 img {
+        margin: 40px auto;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .howto {
+        margin: 50px auto;
+    }
+
+    .howto li {
+        list-style: decimal;
+    }
+
+    .howto .howto-inner {
+        display: flex;
+        align-items: flex-start;
+        margin: 50px auto;
+    }
+
+    .howto p {
+        width: 30%;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .howto .howto__photo1,
+    .howto .howto__photo2 {
+        width: 70%;
+    }
+
+    .howto .howto__photo1 img,
+    .howto .howto__photo2 img {
+        margin: 0 10px;
+    }
+}
+
+@media(min-width:1024px) {}
+

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.error {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+.error-img {
+  width: 50%;
+  height: auto;
+}
+.error p {
+  width: 80%;
+}
+.error button {
+  font-size: 16px;
+  font-weight: 900;
+  color: #333;
+  padding: 1em;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-shadow: 0px 4px 16px 0px #ccc;
+  /* 影指定 */
+  outline: none;
+}
+.error button:hover {
+  background-color: #666;
+  color: #fff;
+  border-color: #555;
+}
+
+@media (min-width: 960px) {
+  .error-img {
+    width: 40%;
+  }
+}/*# sourceMappingURL=style.css.map */
