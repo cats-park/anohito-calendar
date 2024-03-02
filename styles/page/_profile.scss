@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@use "../mixins" as m;
+
+
+#profile {
+    @include m.child-common-style();
+
+    /* artist */
+    .artist {
+        margin: 30px auto;
+
+        @include m.size-sm {
+            margin: 40px auto;
+        }
+
+        @include m.size-lg {
+            margin: 50px auto;
+        }
+
+        h2 {
+            border-bottom: solid 1px #333;
+            width: 60%;
+            margin-bottom: 15px;
+            text-align: left;
+
+            @include m.size-sm {
+                margin-bottom: 20px;
+            }
+        }
+
+        .niconico-tv {
+            @include m.size-md {
+                width: auto;
+                height: 32px;
+                margin-right: 8px;
+            }
+
+            @include m.size-lg {
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            &:hover {
+                @include m.size-md {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .artist__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .ar_mafumafu:hover {
+            border: solid 4px #f8f8ff;
+            opacity: 0.5;
+        }
+
+        .ar_soraru:hover {
+            border: solid 4px #0000ff;
+            opacity: 0.7;
+        }
+
+        .ar_uratanuki:hover {
+            border: solid 4px #00ff00;
+            opacity: 0.7;
+        }
+
+        .ar_sakata:hover {
+            border: solid 4px #dc143c;
+            opacity: 0.7;
+        }
+
+        .ar_amatsuki:hover {
+            border: solid 4px #ff0000;
+            opacity: 0.7;
+        }
+
+        .ar_shima:hover {
+            border: solid 4px #8a2be2;
+            opacity: 0.7;
+        }
+
+        .ar_senra:hover {
+            border: solid 4px #ffff00;
+            opacity: 0.7;
+        }
+    }
+
+    .artist__list__block {
+        width: 100%;
+        margin: 10px auto 20px;
+
+        @include m.size-sm {
+            width: 80%;
+        }
+
+        @include m.size-md {
+            display: flex;
+            margin: 20px auto 40px;
+        }
+    }
+
+    .artist__list__block-hp {
+        width: 50%;
+        height: auto;
+
+        @include m.size-md {
+            width: 30%;
+        }
+    }
+
+    .artist__list__block__profileimg {
+        width: 100%;
+        border-radius: 50%;
+        border: solid 4px #333;
+        box-sizing: border-box;
+
+        @include m.size-md {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .artist__list__block__detail {
+        @include m.size-md {
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        h3 {
+            display: inline-block;
+            width: auto;
+
+            @include m.size-md {
+                text-align: left;
+            }
+        }
+    }
+
+    .artist__list__block__detail__set {
+        display: none;
+
+        @include m.size-md {
+            display: flex;
+        }
+
+        i {
+            @include m.size-md {
+                color: #000;
+                font-size: 32px;
+                margin-right: 8px;
+            }
+
+            @include m.size-lg {
+                font-size: 40px;
+                margin-right: 10px;
+            }
+        }
+
+        .fa-youtube:hover {
+            @include m.size-md {
+                color: rgba(255, 0, 0, 1);
+            }
+        }
+
+        .fa-twitter:hover {
+            @include m.size-md {
+                color: rgba(28, 161, 242, 1);
+
+            }
+        }
+
+        .fa-calendar-alt:hover {
+            @include m.size-md {
+                color: rgba(204, 12, 204, 1);
+
+            }
+        }
+    }
+}

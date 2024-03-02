@@ -1,0 +1,501 @@
+@charset "UTF-8";
+
+@use "../mixins" as m;
+
+@include m.size-sm {}
+
+@include m.size-md {}
+
+@include m.size-lg {}
+
+#top {
+
+    /* notice */
+    .notice {
+        margin: 30px auto;
+        text-align: left;
+        background: repeating-linear-gradient(45deg, red, red 5px, yellow 5px, yellow 10px);
+        padding: 5px;
+        /*線の太さ*/
+        box-sizing: border-box;
+        max-width: 500px;
+
+        @include m.size-sm {
+            margin: 40px auto;
+            padding: 5px;
+            /*線の太さ*/
+        }
+
+        @include m.size-md {
+            max-width: 600px;
+            padding: 10px;
+            /*線の太さ*/
+        }
+
+        @include m.size-lg {
+            margin: 80px auto;
+            padding: 8px;
+            /*線の太さ*/
+            max-width: 720px;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 14px;
+
+            @include m.size-sm {
+                font-size: 18px;
+            }
+
+            @include m.size-md {
+                margin-top: 6px;
+                font-size: 20px;
+            }
+
+            @include m.size-lg {
+                font-size: 32px;
+                line-height: 32px;
+            }
+
+            &:hover {
+                border-bottom: solid 2px #FF6070;
+
+                @include m.size-lg {
+                    border-bottom: solid 3px #FF6070;
+                }
+            }
+        }
+
+        p {
+            @include m.size-lg {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        .big-word {
+            @include m.size-lg {
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
+
+        .notice-inner {
+            background-color: #fff;
+            padding: 2px;
+
+            @include m.size-sm {
+                padding: 2px;
+            }
+
+            @include m.size-md {
+                padding: 5px;
+            }
+        }
+    }
+
+    /* artist */
+    .artist {
+        margin: 30px auto;
+
+        @include m.size-sm {
+            margin: 40px auto;
+        }
+
+        @include m.size-lg {
+            margin: 50px auto;
+        }
+
+        h2 {
+            border-bottom: solid 1px #333;
+            width: 60%;
+            margin-bottom: 15px;
+            text-align: left;
+
+            @include m.size-sm {
+                margin-bottom: 20px;
+            }
+        }
+
+        .niconico-tv {
+            @include m.size-md {
+                width: auto;
+                height: 32px;
+                margin-right: 8px;
+            }
+
+            @include m.size-lg {
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            &:hover {
+                @include m.size-md {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .artist__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .ar_mafumafu:hover {
+            border: solid 4px #f8f8ff;
+            opacity: 0.5;
+        }
+
+        .ar_soraru:hover {
+            border: solid 4px #0000ff;
+            opacity: 0.7;
+        }
+
+        .ar_uratanuki:hover {
+            border: solid 4px #00ff00;
+            opacity: 0.7;
+        }
+
+        .ar_sakata:hover {
+            border: solid 4px #dc143c;
+            opacity: 0.7;
+        }
+
+        .ar_amatsuki:hover {
+            border: solid 4px #ff0000;
+            opacity: 0.7;
+        }
+
+        .ar_shima:hover {
+            border: solid 4px #8a2be2;
+            opacity: 0.7;
+        }
+
+        .ar_senra:hover {
+            border: solid 4px #ffff00;
+            opacity: 0.7;
+        }
+    }
+
+    .artist__list__block {
+        width: 100%;
+        margin: 10px auto 20px;
+
+        @include m.size-sm {
+            width: 80%;
+        }
+
+        @include m.size-md {
+            display: flex;
+            margin: 20px auto 40px;
+        }
+    }
+
+    .artist__list__block-hp {
+        width: 50%;
+        height: auto;
+
+        @include m.size-md {
+            width: 30%;
+        }
+    }
+
+    .artist__list__block__profileimg {
+        width: 100%;
+        border-radius: 50%;
+        border: solid 4px #333;
+        box-sizing: border-box;
+
+        @include m.size-md {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .artist__list__block__detail {
+        @include m.size-md {
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        h3 {
+            display: inline-block;
+            width: auto;
+
+            @include m.size-md {
+                text-align: left;
+            }
+        }
+    }
+
+    .artist__list__block__detail__set {
+        display: none;
+
+        @include m.size-md {
+            display: flex;
+        }
+
+        i {
+            @include m.size-md {
+                color: #000;
+                font-size: 32px;
+                margin-right: 8px;
+            }
+
+            @include m.size-lg {
+                font-size: 40px;
+                margin-right: 10px;
+            }
+        }
+
+        .fa-youtube:hover {
+            @include m.size-md {
+                color: rgba(255, 0, 0, 1);
+            }
+        }
+
+        .fa-twitter:hover {
+            @include m.size-md {
+                color: rgba(28, 161, 242, 1);
+
+            }
+        }
+
+        .fa-calendar-alt:hover {
+            @include m.size-md {
+                color: rgba(204, 12, 204, 1);
+
+            }
+        }
+    }
+
+    /* howto */
+    .howto {
+        margin: 30px auto;
+
+        @include m.size-sm {
+            margin: 40px auto;
+        }
+
+        @include m.size-lg {
+            margin: 50px auto;
+        }
+
+        h2 {
+            border-bottom: solid 1px #333;
+            width: 80%;
+            margin-bottom: 15px;
+            text-align: left;
+
+            @include m.size-sm {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            text-align: left;
+
+            @include m.size-lg {
+                width: 30%;
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+
+        li {
+            list-style: decimal;
+
+            @include m.size-sm {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            @include m.size-lg {
+                list-style: decimal;
+            }
+        }
+
+        .howto-inner {
+            @include m.size-lg {
+                display: flex;
+                align-items: flex-start;
+                margin: 50px auto;
+            }
+        }
+    }
+
+    .howto__photo1,
+    .howto__photo2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include m.size-md {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include m.size-lg {
+            width: 70%;
+        }
+
+        img {
+            width: 95%;
+            height: auto;
+            margin: 20px 0;
+
+            @include m.size-sm {
+                margin: 30px auto;
+            }
+
+            @include m.size-md {
+                margin: 40px auto;
+            }
+
+            @include m.size-lg {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    /* thanks */
+    .thanks {
+        margin: 30px auto;
+
+        @include m.size-sm {
+            margin: 40px auto;
+        }
+
+        @include m.size-lg {
+            margin: 50pxauto;
+        }
+
+        h2 {
+            border-bottom: solid 1px #333;
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+
+            @include m.size-sm {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .thanks__list {
+        margin: 40px auto;
+
+        @include m.size-sm {
+            margin: 60px auto;
+        }
+    }
+
+    .thanks__list__block {
+        width: 70%;
+        padding: 10px;
+        margin: 40px auto;
+        border: solid 1px #333;
+        position: relative;
+
+        @include m.size-sm {
+            padding: 10px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        @include m.size-md {
+            width: 80%;
+            margin: 60px auto;
+        }
+
+        h3 {
+            top: -12px;
+            /* -(14px/2 + 10px/2)*/
+            position: absolute;
+            background-color: #fff;
+            padding: 0 8px;
+
+            @include m.size-sm {
+                top: -14px;
+                /* -(18px/2 + 10px/2)*/
+                padding: 0 10px;
+            }
+
+            @include m.size-md {
+                top: -17px;
+                /* -(24px/2 + 10px/2)*/
+            }
+        }
+    }
+
+    .thanks__list__block-ltitle {
+        left: 9px;
+
+        @include m.size-sm {
+            left: 10px;
+        }
+
+        @include m.size-md {
+            left: 12px;
+        }
+    }
+
+    .thanks__list__block-rtitle {
+        right: 9px;
+
+        @include m.size-sm {
+            right: 10px;
+        }
+
+        @include m.size-md {
+            right: 12px;
+        }
+    }
+
+    .thanks__list__block-inner {
+        margin: 5px 0;
+
+        @include m.size-sm {
+            margin: 10px 0;
+        }
+
+        p {
+            width: 80%;
+            margin: 5px auto;
+        }
+
+        a {
+            &:hover {
+                color: #FF6070;
+                font-weight: 900;
+            }
+        }
+    }
+
+    /* other */
+    .other {
+        margin: 30px auto;
+
+        h2 {
+            border-bottom: solid 1px #333;
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        ul {
+            li {
+                list-style: circle;
+                text-align: left;
+
+                a {
+                    border-bottom: solid 1px #333;
+                }
+            }
+        }
+    }
+}

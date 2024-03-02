@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@use "../mixins" as m;
+
+#contact {
+    @include m.child-common-style();
+
+    .googleforms {
+        margin: 30px auto;
+        width: 70%;
+
+        @include m.size-sm {
+            margin: 40px auto;
+        }
+
+        @include m.size-md {
+            width: 60%;
+        }
+
+        @include m.size-lg {
+            margin: 50px auto;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: 900;
+            color: #333;
+            margin-top: 30px;
+            padding: 1em;
+            border: 2px solid #333;
+            border-radius: 5px;
+            box-shadow: 0px 4px 16px 0px #ccc;
+            /* 影指定 */
+            outline: none;
+
+            &:hover {
+                background-color: #666;
+                color: #fff;
+                border-color: #555;
+            }
+        }
+
+        .arrow {
+            margin-top: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+
+            @include m.size-sm {
+                margin-top: 30px;
+            }
+
+            @include m.size-lg {
+                margin-top: 40px;
+            }
+        }
+    }
+
+}
