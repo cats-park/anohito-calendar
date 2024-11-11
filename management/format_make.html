@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>あの人かれんだー</title>
 
-        <!-- 古いIE用 -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- サイトアイコン（16*16） -->
-        <link rel="icon" href="img/icon/favicon.png" sizes="16x16" type="image/png" />
-        <!-- スマホ用アイコン画像（150*150） -->
-        <link rel="apple-touch-icon-precomposed" href="img/icon/favicon.png" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>あの人かれんだー</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link rel="stylesheet" href="management.css">
-        <!-- アイコン -->
-        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- 古いIE用 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- サイトアイコン（16*16） -->
+    <link rel="icon" href="img/icon/favicon.png" sizes="16x16" type="image/png" />
+    <!-- スマホ用アイコン画像（150*150） -->
+    <link rel="apple-touch-icon-precomposed" href="img/icon/favicon.png" />
 
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <!-- GOOGLE FONT -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157258121-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-157258121-1');
-        </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="management.css">
+    <!-- アイコン -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
-        <!-- ADOBE の FONT -->
-        <script src="https://use.typekit.net/fya1swr.js"></script>
-        <script>
-            try {
-                Typekit.load({async: true});
-            } catch (e) {}
-        </script>
-    </head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- GOOGLE FONT -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157258121-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-157258121-1');
+    </script>
 
-    <body>
-        <header>
-            <h1>フォーマットの作成</h1>
-        </header>
-        <main class="wrapper">
-            <form class="form1" action="" method="post" name="form1">
-                <label>タイトル(曲名)：<input type="text" id="title" name="" value=""></label>
-                <label>URL：<input type="text" id="url" name="" value=""></label>
-            </form>
-            <form class="" id="form2" action="" method="post" name="form2">
-                <p>オプション：
-                    <label><input type="checkbox" name="option" value="歌ってみた">歌ってみた</label>
-                    <label><input type="checkbox" name="option" value="オリジナル">オリジナル</label>
-                </p>
-            </form>
-            <button type="button" class="btn" id="make_btn" name="button">生成</button>
-            <!-- リロードボタン -->
-            <button type="button" class="btn" name="button" id="reloadButton" onclick="window.location.reload();">リロードする</button>
+    <!-- ADOBE の FONT -->
+    <script src="https://use.typekit.net/fya1swr.js"></script>
+    <script>
+        try {
+            Typekit.load({ async: true });
+        } catch (e) { }
+    </script>
+</head>
 
-            <div id="result" class="result">
-            </div>
-            <div class="copyButtons">
-                <button class="btn" id="copyTitle_btn" type="button" name="button">タイトルをコピー</button>
-                <button class="btn" id="copyText_btn" type="button" name="button">本文をコピー</button>
-            </div>
-        </main>
+<body>
+    <header>
+        <h1>フォーマットの作成</h1>
+    </header>
+    <main class="wrapper">
+        <form class="form1" action="" method="post" name="form1">
+            <label>タイトル(曲名)：<input type="text" id="title" name="" value=""></label>
+            <label>URL：<input type="text" id="url" name="" value=""></label>
+        </form>
+        <form class="" id="form2" action="" method="post" name="form2">
+            <p>オプション：
+                <label><input type="checkbox" name="option" value="歌ってみた">歌ってみた</label>
+                <label><input type="checkbox" name="option" value="オリジナル">オリジナル</label>
+            </p>
+        </form>
+        <button type="button" class="btn" id="make_btn" name="button">生成</button>
+        <!-- リロードボタン -->
+        <button type="button" class="btn" name="button" id="reloadButton"
+            onclick="window.location.reload();">リロードする</button>
 
-        <script src="formatMake.js">
-        </script>
+        <div id="result" class="result">
+        </div>
+        <div class="copyButtons">
+            <button class="btn" id="copyTitle_btn" type="button" name="button">タイトルをコピー</button>
+            <button class="btn" id="copyText_btn" type="button" name="button">本文をコピー</button>
+        </div>
+    </main>
 
-        <script src="copyTitleText.js">
-        </script>
-    </body>
+    <script src="formatMake.js">
+    </script>
+
+    <script src="copyTitleText.js">
+    </script>
+</body>
+
 </html>
