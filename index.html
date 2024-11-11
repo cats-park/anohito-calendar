@@ -1,578 +1,427 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>あの人かれんだー</title>
-        <meta
-            name="description"
-            content="
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>あの人かれんだー</title>
+    <meta name="description" content="
         あの人かれんだーでは様々なアーティストの公表されている様々な予定をまとめています。
-        大事な予定を逃さないでください！"
-        />
-        <meta property="og:title" content="あの人かれんだー" />
-        <meta
-            property="og:description"
-            content="
+        大事な予定を逃さないでください！" />
+    <meta property="og:title" content="あの人かれんだー">
+    <meta property="og:description" content="
         あの人かれんだーでは様々なアーティストの公表されている様々な予定をまとめています。
-        大事な予定を逃さないでください！"
-        />
-        <meta property="og:image" content="img/icon/favicon.png" />
+        大事な予定を逃さないでください！">
+    <meta property="og:image" content="img/icon/favicon.png">
 
-        <!-- 古いIE用 -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- サイトアイコン（16*16） -->
-        <link
-            rel="icon"
-            href="img/icon/favicon.png"
-            sizes="16x16"
-            type="image/png"
-        />
-        <!-- スマホ用アイコン画像（150*150） -->
-        <link rel="apple-touch-icon-precomposed" href="img/icon/favicon.png" />
-        <!-- CSS -->
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/ress/dist/ress.min.css"
-        />
-        <link rel="stylesheet" href="./styles/style.css" />
-        <!-- アイコン -->
-        <link
-            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-            rel="stylesheet"
-        />
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <!-- GOOGLE FONT -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-157258121-1"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "UA-157258121-1");
-        </script>
-        <!-- ADOBE の FONT -->
-        <script src="https://use.typekit.net/fya1swr.js"></script>
-        <script>
-            try {
-                Typekit.load({ async: true });
-            } catch (e) {}
-        </script>
-    </head>
+    <!-- 古いIE用 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- サイトアイコン（16*16） -->
+    <link rel="icon" href="img/icon/favicon.png" sizes="16x16" type="image/png" />
+    <!-- スマホ用アイコン画像（150*150） -->
+    <link rel="apple-touch-icon-precomposed" href="img/icon/favicon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- アイコン -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- GOOGLE FONT -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157258121-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-157258121-1');
+    </script>
+    <!-- ADOBE の FONT -->
+    <script src="https://use.typekit.net/fya1swr.js"></script>
+    <script>
+        try {Typekit.load({async: true});} catch (e) {}
+    </script>
+</head>
 
-    <body>
-        <!-- HEADER -->
-        <header id="header">
-            <div class="header-inner wrapper">
-                <h1>
-                    <a href="index.html" class="red-word">あの人かれんだー</a>
-                </h1>
-                <nav class="menu" id="menu">
-                    <ul>
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="calendar.html">Calendar</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- /HEADER -->
-
-        <div class="empty"></div>
-        <main id="top">
-            <!-- REQUEST -->
-            <div class="request wrapper" id="request">
-                <h2>お願い</h2>
-                <p>
-                    本サイトでは様々なアーティストのスケジュールをまとめています。
-                    情報を逃さないために毎日欠かさずチェックしてくれたら幸いです。
-                </p>
-                <p>
-                    本サイトの管理人のように後悔しないことを祈ります。 最後に
-                    <a href="about.html" class="red-word">こちら</a>
-                    から使用方法をご確認ください！
-                </p>
-            </div>
-
-            <!-- ARTIST -->
-            <div class="artist wrapper">
-                <h2>アーティスト</h2>
-                <div class="artist__list">
-                    <div class="artist__list__block">
-                        <a
-                            href="http://uni-mafumafu.jp"
-                            class="artist__list__block-hp"
-                            target="_blank"
-                        >
-                            <img
-                                src="img/mafumafu/mafumafu_twitter_400x400.jpg"
-                                alt="まふまふ"
-                                class="artist__list__block__profileimg ar_mafumafu"
-                            />
-                        </a>
-                        <div class="artist__list__block__detail">
-                            <h3>まふまふ</h3>
-                            <div class="artist__list__block__detail__set">
-                                <a
-                                    href="https://www.youtube.com/channel/UCOTR1tcOAhjgi6YukrPpZxg"
-                                    target="_blank"
-                                    ><i class="fab fa-youtube"></i
-                                ></a>
-                                <a
-                                    href="https://www.nicovideo.jp/user/18874531"
-                                    target="_blank"
-                                    ><img
-                                        src="img/nc181450.png"
-                                        alt="ニコニコ動画"
-                                        class="niconico-tv"
-                                /></a>
-                                <a
-                                    href="https://twitter.com/uni_mafumafu"
-                                    target="_blank"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="calendar.html"
-                                    ><i class="fas fa-calendar-alt"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="artist__list__block">
-                        <a
-                            href="http://soraruru.jp"
-                            class="artist__list__block-hp"
-                            target="_blank"
-                        >
-                            <img
-                                src="img/soraru/soraru_twitter_400x400.jpeg"
-                                alt=""
-                                class="artist__list__block__profileimg ar_soraru"
-                            />
-                        </a>
-                        <div class="artist__list__block__detail">
-                            <h3>そらる</h3>
-                            <div class="artist__list__block__detail__set">
-                                <a
-                                    href="https://www.youtube.com/user/soraruYT"
-                                    target="_blank"
-                                    ><i class="fab fa-youtube"></i
-                                ></a>
-                                <a
-                                    href="https://www.nicovideo.jp/user/1796335"
-                                    target="_blank"
-                                    ><img
-                                        src="img/nc181450.png"
-                                        alt="ニコニコ動画"
-                                        class="niconico-tv"
-                                /></a>
-                                <a
-                                    href="https://twitter.com/soraruru"
-                                    target="_blank"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="calendar.html"
-                                    ><i class="fas fa-calendar-alt"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="artist__list__block">
-                        <a
-                            href="https://urashimasakatasen.com/"
-                            class="artist__list__block-hp"
-                            target="_blank"
-                        >
-                            <img
-                                src="img/uratanuki/uratanuki_twitter_400x400.jpg"
-                                alt=""
-                                class="artist__list__block__profileimg ar_uratanuki"
-                            />
-                        </a>
-                        <div class="artist__list__block__detail">
-                            <h3>うらたぬき</h3>
-                            <div class="artist__list__block__detail__set">
-                                <a
-                                    href="https://www.youtube.com/channel/UClaxMaRbq4onTU-YYnAs-xQ"
-                                    target="_blank"
-                                    ><i class="fab fa-youtube"></i
-                                ></a>
-                                <a
-                                    href="https://www.nicovideo.jp/user/31774679"
-                                    target="_blank"
-                                    ><img
-                                        src="img/nc181450.png"
-                                        alt="ニコニコ動画"
-                                        class="niconico-tv"
-                                /></a>
-                                <a
-                                    href="https://twitter.com/uratasama"
-                                    target="_blank"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="calendar.html"
-                                    ><i class="fas fa-calendar-alt"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="artist__list__block">
-                        <a
-                            href="https://urashimasakatasen.com/"
-                            class="artist__list__block-hp"
-                            target="_blank"
-                        >
-                            <img
-                                src="img/sakata/sakata_twitter_400x400.jpg"
-                                alt=""
-                                class="artist__list__block__profileimg ar_sakata"
-                            />
-                        </a>
-                        <div class="artist__list__block__detail">
-                            <h3>となりの坂田</h3>
-                            <div class="artist__list__block__detail__set">
-                                <a
-                                    href="https://www.youtube.com/channel/UCvOX0NWMvYrgSV15vuxV4Pg"
-                                    target="_blank"
-                                    ><i class="fab fa-youtube"></i
-                                ></a>
-                                <a
-                                    href="https://www.nicovideo.jp/user/6888642"
-                                    target="_blank"
-                                    ><img
-                                        src="img/nc181450.png"
-                                        alt="ニコニコ動画"
-                                        class="niconico-tv"
-                                /></a>
-                                <a
-                                    href="https://twitter.com/sakatandao"
-                                    target="_blank"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="calendar.html"
-                                    ><i class="fas fa-calendar-alt"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="artist__list__block">
-                        <a
-                            href="https://amatsuki.jp/"
-                            class="artist__list__block-hp"
-                            target="_blank"
-                        >
-                            <img
-                                src="img/amatsuki/amatsuki_twitter_400x400.jpg"
-                                alt=""
-                                class="artist__list__block__profileimg ar_amatsuki"
-                            />
-                        </a>
-                        <div class="artist__list__block__detail">
-                            <h3>天月-あまつき-</h3>
-                            <div class="artist__list__block__detail__set">
-                                <a
-                                    href="https://www.youtube.com/user/amatsuki2525official"
-                                    target="_blank"
-                                    ><i class="fab fa-youtube"></i
-                                ></a>
-                                <a
-                                    href="https://www.nicovideo.jp/user/28385"
-                                    target="_blank"
-                                    ><img
-                                        src="img/nc181450.png"
-                                        alt="ニコニコ動画"
-                                        class="niconico-tv"
-                                /></a>
-                                <a
-                                    href="https://twitter.com/_amatsuki_"
-                                    target="_blank"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="calendar.html"
-                                    ><i class="fas fa-calendar-alt"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="artist__list__block">
-                        <a
-                            href="https://urashimasakatasen.com/"
-                            class="artist__list__block-hp"
-                            target="_blank"
-                        >
-                            <img
-                                src="img/shima/shima_twitter_400x400.jpg"
-                                alt=""
-                                class="artist__list__block__profileimg ar_shima"
-                            />
-                        </a>
-                        <div class="artist__list__block__detail">
-                            <h3>志麻</h3>
-                            <div class="artist__list__block__detail__set">
-                                <a
-                                    href="https://www.youtube.com/channel/UCDIWpMZKXTng4mT4eMF5oTA"
-                                    target="_blank"
-                                    ><i class="fab fa-youtube"></i
-                                ></a>
-                                <a
-                                    href="https://www.nicovideo.jp/user/2149103"
-                                    target="_blank"
-                                    ><img
-                                        src="img/nc181450.png"
-                                        alt="ニコニコ動画"
-                                        class="niconico-tv"
-                                /></a>
-                                <a
-                                    href="https://twitter.com/shima_s2"
-                                    target="_blank"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="calendar.html"
-                                    ><i class="fas fa-calendar-alt"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="artist__list__block">
-                        <a
-                            href="https://urashimasakatasen.com/"
-                            class="artist__list__block-hp"
-                            target="_blank"
-                        >
-                            <img
-                                src="img/senra/senra_twitter_400x400.jpg"
-                                alt=""
-                                class="artist__list__block__profileimg ar_senra"
-                            />
-                        </a>
-                        <div class="artist__list__block__detail">
-                            <h3>センラ</h3>
-                            <div class="artist__list__block__detail__set">
-                                <a
-                                    href="https://www.youtube.com/channel/UCGQg0ZjM_QQ2jvUd5j9Fp-Q"
-                                    target="_blank"
-                                    ><i class="fab fa-youtube"></i
-                                ></a>
-                                <a
-                                    href="https://www.nicovideo.jp/user/3443014"
-                                    target="_blank"
-                                    ><img
-                                        src="img/nc181450.png"
-                                        alt="ニコニコ動画"
-                                        class="niconico-tv"
-                                /></a>
-                                <a
-                                    href="https://twitter.com/sen_sen_sen_sen"
-                                    target="_blank"
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a href="calendar.html"
-                                    ><i class="fas fa-calendar-alt"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- HOWTO -->
-            <div class="howto wrapper">
-                <h2>使い方（スマホ）</h2>
-                <ol class="wrapper">
-                    <li>
-                        <div class="howto-inner">
-                            <p>
-                                ホーム画面に追加したいかれんだーのページを開き、
-                                下部の「共有」アイコンから「ホーム画面に追加」を選択する。
-                            </p>
-                            <div class="howto__photo1">
-                                <img src="img/howto-phto1.png" alt="" />
-                                <img src="img/howto-phto2.png" alt="" />
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="howto-inner">
-                            <p>
-                                ホームに追加画面で「追加」を選択することで
-                                ホーム画面上にかれんだーのページのリンクアイコンを追加できます。
-                                リンクアイコンをタップすることでかれんだーに直接アクセスできます。
-                            </p>
-                            <div class="howto__photo2">
-                                <img src="img/howto-phto3.png" alt="" />
-                                <img src="img/howto-phto4.png" alt="" />
-                                <img
-                                    src="img/howto-phto5.png"
-                                    alt=""
-                                    class="howto__photo2-img_last"
-                                />
-                            </div>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-
-            <!-- NOTICE -->
-            <!-- 2022/5/4非表示化 -->
-            <div class="notice wrapper" style="display: none">
-                <div class="notice-inner">
-                    <p>
-                        管理人は絵が下手すぎるのでサイトに使用する<span
-                            class="big-word"
-                            >イラスト</span
-                        >を募集しています！！ あなたの力を貸してください！
-                    </p>
-                    <p>
-                        <a
-                            class="red-word"
-                            href="https://twitter.com/anohito_ca"
-                            target="_blank"
-                            >DM</a
-                        >にお願いいたします！（お礼あり）
-                    </p>
-                </div>
-            </div>
-
-            <!-- THANKS -->
-            <div class="thanks wrapper">
-                <h2>謝礼</h2>
-                <p>
-                    本サイトで使用しているイラスト・画像は以下の方からお借りいたしました。
-                    感謝をこめ、以下に名前を列挙いたします。
-                </p>
-                <p>
-                    万が一不適切な利用がございましたら、<a
-                        href="contact.html"
-                        class="red-word"
-                        >こちら</a
-                    >からご連絡ください。
-                </p>
-                <div class="thanks__list">
-                    <div class="thanks__list__block">
-                        <h3 class="thanks__list__block-ltitle">まふまふ</h3>
-                        <div class="thanks__list__block-inner">
-                            <p>
-                                Twitter：<a
-                                    href="https://twitter.com/uni_mafumafu"
-                                    >@uni_mafumafu</a
-                                >
-                            </p>
-                            <p>
-                                Twitter、HPの画像を多数お借りいたしました。ありがとうございます。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="thanks__list__block">
-                        <h3 class="thanks__list__block-rtitle">そらる</h3>
-                        <div class="thanks__list__block-inner">
-                            <p>
-                                Twitter：<a href="https://twitter.com/soraruru"
-                                    >@soraruru</a
-                                >
-                            </p>
-                            <p>
-                                Twitter、HPの画像を多数お借りいたしました。ありがとうございます。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="thanks__list__block">
-                        <h3 class="thanks__list__block-ltitle">うらたぬき</h3>
-                        <div class="thanks__list__block-inner">
-                            <p>
-                                Twitter：<a href="https://twitter.com/uratasama"
-                                    >@uratasama</a
-                                >
-                            </p>
-                            <p>
-                                Twitter、HPの画像を多数お借りいたしました。ありがとうございます。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="thanks__list__block">
-                        <h3 class="thanks__list__block-rtitle">となりの坂田</h3>
-                        <div class="thanks__list__block-inner">
-                            <p>
-                                Twitter：<a
-                                    href="https://twitter.com/sakatandao"
-                                    >@sakatandao</a
-                                >
-                            </p>
-                            <p>
-                                Twitter、HPの画像を多数お借りいたしました。ありがとうございます。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="thanks__list__block">
-                        <h3 class="thanks__list__block-ltitle">
-                            天月-あまつき-
-                        </h3>
-                        <div class="thanks__list__block-inner">
-                            <p>
-                                Twitter：<a
-                                    href="https://twitter.com/_amatsuki_"
-                                    >@_amatsuki_</a
-                                >
-                            </p>
-                            <p>
-                                Twitter、HPの画像を多数お借りいたしました。ありがとうございます。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="thanks__list__block">
-                        <h3 class="thanks__list__block-rtitle">志麻</h3>
-                        <div class="thanks__list__block-inner">
-                            <p>
-                                Twitter：<a href="https://twitter.com/shima_s2"
-                                    >@shima_s2</a
-                                >
-                            </p>
-                            <p>
-                                Twitter、HPの画像を多数お借りいたしました。ありがとうございます。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="thanks__list__block">
-                        <h3 class="thanks__list__block-ltitle">センラ</h3>
-                        <div class="thanks__list__block-inner">
-                            <p>
-                                Twitter：<a
-                                    href="https://twitter.com/sen_sen_sen_sen"
-                                    >@sen_sen_sen_sen</a
-                                >
-                            </p>
-                            <p>
-                                Twitter、HPの画像を多数お借りいたしました。ありがとうございます。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- OTHER -->
-            <div class="other wrapper">
-                <h2>その他</h2>
-                <ul class="wrapper">
-                    <li>
-                        <p>
-                            <a href="other"
-                                >2022/5/4iOS15以降でカレンダーが表示されない</a
-                            >
-                        </p>
-                    </li>
+<body>
+    <!-- 2022/5/4非表示化 -->
+    <!-- <a href="calendar.html" class="fixed-btn"><i class="fas fa-calendar-alt"></i></a> -->
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner wrapper">
+            <h1><a href="index.html" class="red-word">あの人かれんだー</a></h1>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
-        </main>
+            </nav>
+        </div>
+    </header><!-- /HEADER -->
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer-inner wrapper">
-                <small>&copy;2020-2024 あの人かれんだー</small>
+    <div class="empty"></div>
+
+    <!-- REQUEST -->
+    <div class="request wrapper" id="request">
+        <h2>お願い</h2>
+        <p>
+            本サイトでは様々なアーティストのスケジュールをまとめています。
+            情報を逃さないために毎日欠かさずチェックしてくれたら幸いです。
+        </p>
+        <p>
+            本サイトの管理人のように後悔しないことを祈ります。
+            最後に <a href="about.html" class="red-word">こちら</a>から使用方法をご確認ください！
+        </p>
+    </div><!-- /REQUEST -->
+
+    <!-- QUIZ -->
+    <div class="quiz wrapper">
+        <h2>ミニゲーム</h2>
+        <h3>〜歌い手当てゲーム〜</h3>
+        <a href="quizImage" class="quiz-btn">スタート！</a>
+        <h3>〜あの人を探せ！〜</h3>
+        <a href="findGuys" class="quiz-btn">スタート！</a>
+    </div><!-- /QUIZ -->
+
+    <!-- COVID-19 (コロナ) -->
+    <!-- 2022/5/4非表示化 -->
+    <div class="covid wrapper" style="display: none;">
+        <div class="covid-inner">
+            <h2>公演中止・延期一覧</h2>
+        </div>
+        <div id="covidCases">
+            <!-- ここに件数の文章を入れる -->
+        </div>
+        <div class="jump-covid">
+            <a href="covid.html" class="jump-covid-btn">詳細はこちら‼︎</a>
+        </div>
+    </div>
+
+    <!-- ARTIST -->
+    <div class="artist wrapper">
+        <h2>アーティスト</h2>
+        <div class="artist__list">
+            <div class="artist__list__block">
+                <a href="http://uni-mafumafu.jp" class="artist__list__block-hp" target="_blank">
+                    <img src="img/mafumafu/mafumafu_twitter_400x400.jpg" alt="まふまふ"
+                        class="artist__list__block__profileimg ar_mafumafu">
+                </a>
+                <div class="artist__list__block__detail">
+                    <h3>まふまふ</h3>
+                    <div class="artist__list__block__detail__set">
+                        <a href="https://www.youtube.com/channel/UCOTR1tcOAhjgi6YukrPpZxg" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.nicovideo.jp/user/18874531" target="_blank"><img src="img/nc181450.png"
+                                alt="ニコニコ動画" class="niconico-tv"></a>
+                        <a href="https://twitter.com/uni_mafumafu" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="calendar.html"><i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
+            <div class="artist__list__block">
+                <a href="http://soraruru.jp" class="artist__list__block-hp" target="_blank">
+                    <img src="img/soraru/soraru_twitter_400x400.png" alt=""
+                        class="artist__list__block__profileimg ar_soraru">
+                </a>
+                <div class="artist__list__block__detail">
+                    <h3>そらる</h3>
+                    <div class="artist__list__block__detail__set">
+                        <a href="https://www.youtube.com/user/soraruYT" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.nicovideo.jp/user/1796335" target="_blank"><img src="img/nc181450.png"
+                                alt="ニコニコ動画" class="niconico-tv"></a>
+                        <a href="https://twitter.com/soraruru" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="calendar.html"><i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="artist__list__block">
+                <a href="https://urashimasakatasen.com/" class="artist__list__block-hp" target="_blank">
+                    <img src="img/uratanuki/uratanuki_twitter_400x400.jpg" alt=""
+                        class="artist__list__block__profileimg ar_uratanuki">
+                </a>
+                <div class="artist__list__block__detail">
+                    <h3>うらたぬき</h3>
+                    <div class="artist__list__block__detail__set">
+                        <a href="https://www.youtube.com/channel/UClaxMaRbq4onTU-YYnAs-xQ" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.nicovideo.jp/user/31774679" target="_blank"><img src="img/nc181450.png"
+                                alt="ニコニコ動画" class="niconico-tv"></a>
+                        <a href="https://twitter.com/uratasama" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="calendar.html"><i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="artist__list__block">
+                <a href="https://urashimasakatasen.com/" class="artist__list__block-hp" target="_blank">
+                    <img src="img/sakata/sakata_twitter_400x400.jpg" alt=""
+                        class="artist__list__block__profileimg ar_sakata">
+                </a>
+                <div class="artist__list__block__detail">
+                    <h3>となりの坂田</h3>
+                    <div class="artist__list__block__detail__set">
+                        <a href="https://www.youtube.com/channel/UCvOX0NWMvYrgSV15vuxV4Pg" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.nicovideo.jp/user/6888642" target="_blank"><img src="img/nc181450.png"
+                                alt="ニコニコ動画" class="niconico-tv"></a>
+                        <a href="https://twitter.com/sakatandao" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="calendar.html"><i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="artist__list__block">
+                <a href="https://amatsuki.jp/" class="artist__list__block-hp" target="_blank">
+                    <img src="img/amatsuki/amatsuki_twitter_400x400.jpg" alt=""
+                        class="artist__list__block__profileimg ar_amatsuki">
+                </a>
+                <div class="artist__list__block__detail">
+                    <h3>天月-あまつき-</h3>
+                    <div class="artist__list__block__detail__set">
+                        <a href="https://www.youtube.com/user/amatsuki2525official" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.nicovideo.jp/user/28385" target="_blank"><img src="img/nc181450.png"
+                                alt="ニコニコ動画" class="niconico-tv"></a>
+                        <a href="https://twitter.com/_amatsuki_" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="calendar.html"><i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="artist__list__block">
+                <a href="https://luz-web.com/" class="artist__list__block-hp" target="_blank">
+                    <img src="img/luz/luz_twitter_400x400.png" alt="" class="artist__list__block__profileimg ar_luz">
+                </a>
+                <div class="artist__list__block__detail">
+                    <h3>luz</h3>
+                    <div class="artist__list__block__detail__set">
+                        <a href="https://www.youtube.com/user/luzofficialchannel" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.nicovideo.jp/user/8357758" target="_blank"><img src="img/nc181450.png"
+                                alt="ニコニコ動画" class="niconico-tv"></a>
+                        <a href="https://twitter.com/luzabs" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="calendar.html"><i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="artist__list__block">
+                <a href="https://urashimasakatasen.com/" class="artist__list__block-hp" target="_blank">
+                    <img src="img/shima/shima_twitter_400x400.jpg" alt=""
+                        class="artist__list__block__profileimg ar_shima">
+                </a>
+                <div class="artist__list__block__detail">
+                    <h3>志麻</h3>
+                    <div class="artist__list__block__detail__set">
+                        <a href="https://www.youtube.com/channel/UCDIWpMZKXTng4mT4eMF5oTA" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.nicovideo.jp/user/2149103" target="_blank"><img src="img/nc181450.png"
+                                alt="ニコニコ動画" class="niconico-tv"></a>
+                        <a href="https://twitter.com/shima_s2" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="calendar.html"><i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="artist__list__block">
+                <a href="https://urashimasakatasen.com/" class="artist__list__block-hp" target="_blank">
+                    <img src="img/senra/senra_twitter_400x400.jpg" alt=""
+                        class="artist__list__block__profileimg ar_senra">
+                </a>
+                <div class="artist__list__block__detail">
+                    <h3>センラ</h3>
+                    <div class="artist__list__block__detail__set">
+                        <a href="https://www.youtube.com/channel/UCGQg0ZjM_QQ2jvUd5j9Fp-Q" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.nicovideo.jp/user/3443014" target="_blank"><img src="img/nc181450.png"
+                                alt="ニコニコ動画" class="niconico-tv"></a>
+                        <a href="https://twitter.com/sen_sen_sen_sen" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="calendar.html"><i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /ARTIST -->
+
+    <!-- HOWTO -->
+    <div class="howto wrapper">
+        <h2>使い方（スマホ）</h2>
+        <ol class="wrapper">
+            <li>
+                <div class="howto-inner">
+                    <p>
+                        ホーム画面に追加したいかれんだーのページを開き、
+                        下部の「共有」アイコンから「ホーム画面に追加」を選択する。
+                    </p>
+                    <div class="howto__photo1">
+                        <img src="img/howto-phto1.png" alt="">
+                        <img src="img/howto-phto2.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="howto-inner">
+                    <p>
+                        ホームに追加画面で「追加」を選択することで
+                        ホーム画面上にかれんだーのページのリンクアイコンを追加できます。
+                        リンクアイコンをタップすることでかれんだーに直接アクセスできます。
+                    </p>
+                    <div class="howto__photo2">
+                        <img src="img/howto-phto3.png" alt="">
+                        <img src="img/howto-phto4.png" alt="">
+                        <img src="img/howto-phto5.png" alt="" class="howto__photo2-img_last">
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div><!-- /HOWTO -->
+
+    <!-- NOTICE -->
+    <!-- 2022/5/4非表示化 -->
+    <div class="notice wrapper" style="display:none;">
+        <div class="notice-inner">
+            <p>
+                管理人は絵が下手すぎるのでサイトに使用する<span class="big-word">イラスト</span>を募集しています！！
+                あなたの力を貸してください！
+            </p>
+            <p><a class="red-word" href="https://twitter.com/anohito_ca" target="_blank">DM</a>にお願いいたします！（お礼あり）</p>
+        </div>
+    </div><!-- /NOTICE -->
+
+    <!-- THANKS -->
+    <div class="thanks wrapper">
+        <h2>謝礼</h2>
+        <p>
+            本サイトで使用しているイラスト・画像は以下の方からお借りいたしました。
+            感謝をこめ、以下に名前を列挙いたします。
+        </p>
+        <p>万が一不適切な利用がございましたら、<a href="contact.html" class="red-word">こちら</a>からご連絡ください。</p>
+        <div class="thanks__list">
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-ltitle">まふまふ</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/uni_mafumafu">@uni_mafumafu</a></p>
+                    <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-rtitle">そらる</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/soraruru">@soraruru</a></p>
+                    <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-ltitle">うらたぬき</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/uratasama">@uratasama</a></p>
+                    <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-rtitle">となりの坂田</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/sakatandao">@sakatandao</a></p>
+                    <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-ltitle">天月-あまつき-</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/_amatsuki_">@_amatsuki_</a></p>
+                    <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-rtitle">luz</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/luzabs">@luzabs</a></p>
+                    <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-ltitle">志麻</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/shima_s2">@shima_s2</a></p>
+                    <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-rtitle">センラ</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/sen_sen_sen_sen">@sen_sen_sen_sen</a></p>
+                    <p>Twitter、HPの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <!-- 4/1　４アーティスト追加 -->
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-ltitle">ウォルピスカーター</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/wolpis_kater">@wolpis_kater</a></p>
+                    <p>Twitterなどの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-rtitle">Gero</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/Gero2525">@Gero2525</a></p>
+                    <p>Twitterなどの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-ltitle">+α/あるふぁきゅん。</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/alfa10alfa">@alfa10alfa</a></p>
+                    <p>Twitterなどの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+            <div class="thanks__list__block">
+                <h3 class="thanks__list__block-rtitle">けーぽん</h3>
+                <div class="thanks__list__block-inner">
+                    <p>Twitter：<a href="https://twitter.com/k_pon_dasei">@k_pon_dasei</a></p>
+                    <p>Twitterなどの画像を多数お借りいたしました。ありがとうございます。</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /THANKS -->
+
+    <!-- OTHER -->
+    <div class="other wrapper">
+        <h2>その他</h2>
+        <ul class="wrapper">
+            <li>
+                <p><a href="other">2022/5/4iOS15以降でカレンダーが表示されない</a></p>
+            </li>
+        </ul>
+    </div><!-- /OTHER -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner wrapper">
+            <small>&copy;2020-2022 あの人かれんだー</small>
+        </div>
+    </footer><!-- /FOOTER -->
+
+    <!-- 2022/5/4非表示化 -->
+    <!-- <script>
+        let kensu;
+        const covidCases = document.getElementById("covidCases");
+
+        let req = new XMLHttpRequest(); // XMLHttpRequest オブジェクトを生成する
+        req.open("GET", "https://raw.githubusercontent.com/cats-park/json-data/master/covidConcertList.json");
+        req.send();
+        req.onreadystatechange = function () { // XMLHttpRequest オブジェクトの状態が変化した際に呼び出されるイベントハンドラ
+            if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
+                let json = JSON.parse(req.responseText);
+
+                kensu = json.length;
+                hyoji(kensu);
+            }
+        };
+        let hyoji = function (ken) {
+            covidCases.insertAdjacentHTML(
+                'beforeend',
+                `<p>新型コロナウィルスの影響で中止・延期になったのは<span class="red-word">${ken}</span>件です‼︎</p>`
+            );
+        }
+    </script> -->
+</body>
+
 </html>
